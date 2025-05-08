@@ -56,7 +56,8 @@ public class TopologicalSorting {
                 topoSortUtil(graph, e.dest, visi, st);
             }
         }
-        st.push(curr);
+        st.push(curr); // push the dependencies first
+        //push(0), push(1), push(3), push(2), push(5)
         
     }
     public static void main(String[] args) {
